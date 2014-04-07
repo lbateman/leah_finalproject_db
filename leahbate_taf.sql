@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `comment_parent` (`comment_parent`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_comments: ~1 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_comments: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */;
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 	(1, 1, 'Mr WordPress', '', 'http://wordpress.org/', '', '2014-04-05 23:43:31', '2014-04-05 23:43:31', 'Hi, this is a comment.\nTo delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.', 0, '1', '', '', 0, 0);
@@ -101,10 +101,10 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   UNIQUE KEY `option_name` (`option_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_options: ~138 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_options: ~1,035 rows (approximately)
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-	(1, 'siteurl', 'http://taf.leahbateman.com/', 'yes'),
+	(1, 'siteurl', 'http://taf.leahbateman.com', 'yes'),
 	(2, 'blogname', 'Theatre@First', 'yes'),
 	(3, 'blogdescription', 'Just another WordPress site', 'yes'),
 	(4, 'users_can_register', '0', 'yes'),
@@ -139,7 +139,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 	(33, 'blog_charset', 'UTF-8', 'yes'),
 	(34, 'moderation_keys', '', 'no'),
 	(35, 'active_plugins', 'a:3:{i:0;s:27:"acf-gallery/acf-gallery.php";i:1;s:29:"acf-repeater/acf-repeater.php";i:2;s:30:"advanced-custom-fields/acf.php";}', 'yes'),
-	(36, 'home', 'http://taf.leahbateman.com/', 'yes'),
+	(36, 'home', 'http://taf.leahbateman.com', 'yes'),
 	(37, 'category_base', '', 'yes'),
 	(38, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 	(39, 'advanced_edit', '0', 'yes'),
@@ -257,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB AUTO_INCREMENT=349 DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_postmeta: ~318 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_postmeta: ~316 rows (approximately)
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 	(1, 2, '_wp_page_template', 'default'),
@@ -676,7 +676,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   KEY `term_taxonomy_id` (`term_taxonomy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_term_relationships: ~9 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_term_relationships: ~8 rows (approximately)
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 	(1, 1, 0),
@@ -725,7 +725,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_usermeta: ~21 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_usermeta: ~18 rows (approximately)
 /*!40000 ALTER TABLE `wp_usermeta` DISABLE KEYS */;
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 	(1, 1, 'first_name', ''),
@@ -770,7 +770,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   KEY `user_nicename` (`user_nicename`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- Dumping data for table leahbate_taf.wp_users: ~1 rows (approximately)
+-- Dumping data for table leahbate_taf.wp_users: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 	(1, 'lbateman', '$P$B/MmHkKOvxAdTTUcoLHqxmwqGd7mge/', 'lbateman', 'leahbateman@gmail.com', '', '2014-04-05 23:43:31', '', 0, 'lbateman');
